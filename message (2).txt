@@ -1,0 +1,383 @@
+Pragma Visual Style Study Prompt
+Study all attached reference images closely before writing anything.
+Your task is to reverse-engineer Pragma’s repeatable visual systems. Do not generate images and do not create blog-specific image concepts during this stage.
+The reference images may represent different products and more than one visual family within a product. Classify them carefully before extracting any reusable rules.
+Product context
+Pragma has two distinct products:
+PRODUCT_PRAGMA
+Primarily uses a light visual system with muted colors.
+Has its own palette, composition patterns, motifs, and brand treatment.
+PRODUCT_1CHECKOUT
+Primarily uses a dark visual system with 1Checkout-specific colors.
+Has its own palette, composition patterns, motifs, and brand treatment.
+Treat these as separate product identities—not merely light and dark versions of one visual family.
+Never combine their colors, motifs, logos, typography treatments, compositions, or stylistic conventions unless the user explicitly requests a cross-product visual.
+The descriptions above are initial identification hints, not complete style specifications. Derive the actual visual rules from the attached references.
+Product identification
+Before analyzing visual styles:
+Assign every attached reference image to one of the following:
+PRODUCT_PRAGMA
+PRODUCT_1CHECKOUT
+UNCERTAIN
+OUTLIER
+Explain the visual evidence supporting each assignment.
+Do not classify an image by filename alone when the visual evidence contradicts it.
+If an image’s product identity cannot be determined confidently, label it UNCERTAIN. Do not use it to establish product-specific rules without confirmation.
+If an image does not fit any recurring visual system, label it OUTLIER instead of forcing it into a family.
+Reference-image requirements
+Analyze only reference images actually attached and available in the current conversation. Do not assume that references from an earlier conversation or session are still accessible.
+For every reference image, record:
+Reference filename or identifier
+Assigned product
+Proposed visual family
+Classification confidence: high, medium, or low
+Short explanation of the classification
+If no reference images are attached, do not invent a style system. Ask the user to attach representative images for one or both products.
+If references for only one product are supplied, analyze only that product. Clearly state that the other product has not been analyzed.
+If the supplied references mix both products, separate them before analyzing their visual families.
+If too few references are available to distinguish a recurring style from an isolated design choice, mark the conclusion as provisional.
+Style-family classification
+After separating references by product, identify the distinct visual families within each product.
+Do not assume each product has only one family.
+Group images only when they share meaningful characteristics across several dimensions, such as:
+Palette
+Background treatment
+Illustration method
+Composition
+Typography
+Texture
+Motifs
+Information density
+Brand treatment
+Do not combine incompatible references into an averaged style.
+Do not create a new family for every minor variation. A family should represent a repeatable visual system, not a single image.
+Analysis framework
+Apply the following analysis to every visual family.
+1. Composition and layout
+Identify:
+Canvas shape and approximate aspect ratio
+Main focal point
+Text zone and illustration zone
+Alignment pattern
+Relative proportion of text, imagery, and negative space
+Outer margins and internal spacing
+Visual direction and reading flow
+Object scale and hierarchy
+Whether the layout remains clear at mobile or thumbnail size
+How safely the composition can be cropped to 16:9, 3:2, 4:3, and 1:1
+Elements that must remain within the central crop-safe area
+Whether the family is designed primarily for hero images, in-body images, social previews, or multiple contexts
+Separate consistent family rules from choices that vary according to the subject.
+2. Color system
+Identify:
+Background colors with names and approximate hex values
+Primary foreground color
+Accent colors
+Approximate number of colors
+Contrast level
+Monochrome, duotone, or multicolor treatment
+Color hierarchy
+How color directs attention
+Whether colors communicate meaning or are decorative
+Whether the palette remains distinguishable at small sizes
+Whether the palette offers sufficient contrast for essential elements
+Label estimated colors as estimates. Do not claim sampled precision unless reliable color sampling is available.
+Do not transfer colors between PRODUCT_PRAGMA and PRODUCT_1CHECKOUT.
+3. Illustration and line style
+Identify:
+Flat vector, line art, isometric, collage, editorial illustration, 3D, photographic, or mixed treatment
+Stroke weight and consistency
+Sharp or rounded corners
+Solid, outlined, duotone, or shaded fills
+Geometric or organic construction
+Level of abstraction
+Level of detail
+Perspective and depth
+Shadow treatment
+Character treatment, if present
+Treatment of diagrams, arrows, connectors, labels, and data elements
+Visual treatment of people, objects, environments, and interfaces
+What makes the visual recognizably part of this family
+4. Typography and text policy
+Analyze:
+Typeface character
+Weight
+Capitalization
+Alignment
+Hierarchy
+Highlight treatment
+Relationship between type and illustration
+Approximate amount of text
+Whether references use headlines, short labels, numerals, or supporting copy
+Placement and size of text-safe areas
+Then determine whether text should actually be generated inside the image.
+Default rule: do not generate headlines, paragraphs, logos, citations, or important labels inside an AI-generated image. Reserve intentional blank zones so accurate text can be added later during the design or publishing workflow.
+If a visual requires labels for comprehension, specify:
+The minimum necessary labels
+Their intended positions
+Their hierarchy
+Whether they should be added after image generation
+Whether the visual would remain understandable without them
+Do not ask an image-generation model to reproduce long or exact text.
+5. Texture and finish
+Identify:
+Flat or textured finish
+Grain and noise
+Gradient usage
+Shadow type
+Glow
+Paper or print texture
+Edge softness
+Lighting
+Degree of polish
+Whether imperfections are deliberate
+Treatments the family consistently avoids
+6. Recurring motifs and visual vocabulary
+Identify:
+Repeated objects, icons, characters, symbols, or metaphors
+Typical arrangement of objects
+Central hero object versus distributed elements
+Use of hands, devices, arrows, containers, speech bubbles, grids, cards, or frames
+Repeated representations of motion, connection, growth, choice, risk, comparison, or transformation
+Motifs that appear distinctive to the product
+Motifs that are generic and should not be overused
+Motifs that belong exclusively to one product
+Do not turn recurring motifs into mandatory elements when they do not suit the visual’s purpose.
+7. Branding
+Identify:
+Logo placement
+Logo scale
+Clear space
+Lockup style
+Watermarks or signature elements
+Consistent brand positions
+Product-specific brand markers
+Whether the logo is integral to the composition or added afterward
+Do not instruct an image-generation model to invent, redraw, approximate, alter, or distort the Pragma or 1Checkout logo.
+If a logo appears in the references:
+Reserve an appropriate logo-safe area.
+Recommend adding the official logo asset after image generation.
+Explain its typical placement and scale.
+Do not reproduce third-party logos or protected brand elements unless explicitly supplied and authorized.
+8. Information integrity
+Determine whether the family is suitable for:
+Decorative editorial imagery
+Conceptual explanations
+Process diagrams
+Decision trees
+Comparisons
+Timelines
+Maps
+Data visualizations
+Evidence-oriented illustrations
+Hero images
+In-body explanatory images
+Section-opening images
+Summary graphics
+Do not recommend a family for charts, maps, technical processes, or evidence visuals if its treatment would make factual information ambiguous.
+Never invent:
+Data or statistics
+Proportions
+Research findings
+Product capabilities
+User interfaces
+Documentary events
+Maps or geographic relationships
+Technical processes
+Brand claims
+Factual relationships
+If a future visual will depend on supplied facts or data, include those facts under FACTUAL CONSTRAINTS rather than assuming them.
+9. Accessibility and publishing resilience
+Evaluate:
+Legibility at mobile width
+Contrast
+Dependence on color
+Information density
+Crop resilience
+Thumbnail recognizability
+Whether essential meaning can be described in nearby article text
+Whether the design leaves room for externally added labels, captions, or credits
+Whether the image would remain useful for readers with color-vision differences
+Whether small details are necessary to understand the main idea
+The design must not depend on tiny text, subtle color differences, or low-contrast elements to communicate essential meaning.
+10. Differences within the family
+Identify:
+Elements that are fixed
+Elements that are flexible
+Elements that appear only in isolated references
+Features that may be artifacts rather than intentional style rules
+Ambiguities or contradictions in the references
+Whether the family contains subvariants
+Whether a subvariant is strong enough to become a separate family
+Do not turn a feature into a family rule unless the references support doing so consistently.
+Required output
+Use the following format for every visual family.
+Family name
+Product:
+Specify one:
+PRODUCT_PRAGMA
+PRODUCT_1CHECKOUT
+A family cannot belong to both products unless the user has explicitly confirmed that it is shared.
+Reference members:
+List the filenames or identifiers of all attached references assigned to this family.
+Reference confidence:
+State high, medium, or low confidence and explain why.
+Defining characteristics:
+Summarize the characteristics that distinguish this family from other families belonging to the same product and from the other Pragma product.
+Stable style prompt:
+Write a reusable, subject-independent style prompt containing only the family’s consistent visual characteristics:
+Visual medium
+Palette
+Illustration treatment
+Geometry
+Composition tendencies
+Texture
+Contrast
+Spacing
+Depth
+Mood
+Product-specific visual identity
+Do not permanently encode a particular blog topic, object, person, statistic, product claim, or scene.
+Variable composition template:
+Provide a reusable template containing the following variables:
+[PRODUCT]
+[SUBJECT]
+[VISUAL PURPOSE]
+[KEY ELEMENTS]
+[RELATIONSHIPS OR SEQUENCE]
+[ASPECT RATIO]
+[FOCAL POINT]
+[TEXT SAFE ZONE]
+[LOGO SAFE ZONE]
+[FACTUAL CONSTRAINTS]
+[ELEMENTS TO EXCLUDE]
+Explain how a future article image brief should populate these variables without changing the family’s visual identity.
+Negative prompt:
+List the qualities this family consistently excludes.
+Include relevant restrictions concerning:
+Incompatible visual media
+Other product’s colors or motifs
+Unwanted colors
+Clutter
+Excessive detail
+Poor contrast
+Tiny elements
+Unnecessary text
+Random lettering
+Misspelled labels
+Invented logos
+Distorted logos
+Watermarks
+Third-party branding
+Distorted anatomy
+Misleading data
+Invented interfaces
+Unrequested interface elements
+Incompatible shadows
+Incompatible gradients
+Incompatible textures
+Incompatible dimensionality
+Generic stock-image aesthetics
+Do not add generic negative terms unless they are useful for this specific family.
+Text and logo handling:
+State:
+Which areas should remain empty for headlines or labels
+Which areas should remain empty for the official product logo
+Whether any short generated labels are acceptable
+Which text and logo elements must be added after generation
+Whether the layout remains balanced if no text is added
+Crop and size guidance:
+Recommend suitable aspect ratios and explain how to preserve the focal point across:
+Desktop blog display
+Mobile blog display
+Search and social thumbnails
+16:9 crops
+3:2 crops
+4:3 crops
+1:1 crops
+For hero-image families, ensure the design can be produced at a minimum width of 1,200 pixels and can survive a 16:9 landscape crop.
+Suitable content:
+Explain which visual purposes, article types, and blog sections this family serves best.
+Unsuitable content:
+Explain when this family should not be used.
+Ambiguities:
+List:
+Uncertain color values
+Inconsistent details
+Possible outliers
+Unsupported assumptions
+Conclusions requiring human confirmation
+Product-level synthesis
+After analyzing all families, provide a separate synthesis for each product.
+PRODUCT_PRAGMA visual system
+Summarize:
+Shared visual principles
+Approved palettes
+Common composition rules
+Recurring motifs
+Typical image purposes
+Text and logo policy
+Characteristics that must not be borrowed from PRODUCT_1CHECKOUT
+If insufficient references were supplied, state that the synthesis is provisional.
+PRODUCT_1CHECKOUT visual system
+Summarize:
+Shared visual principles
+Approved palettes
+Common composition rules
+Recurring motifs
+Typical image purposes
+Text and logo policy
+Characteristics that must not be borrowed from PRODUCT_PRAGMA
+If insufficient references were supplied, state that the synthesis is provisional.
+Family routing guide
+Create a compact routing guide mapping each visual purpose to the most appropriate product-specific family.
+Cover at least:
+Blog hero
+Concept explanation
+Process or workflow
+Comparison
+Evidence-oriented visual
+Timeline
+Decision framework
+Section-opening visual
+Conclusion or summary graphic
+For each purpose, provide:
+Recommended family
+Product
+Reason for selection
+Main constraint
+Alternative family, if appropriate
+If no analyzed family is suitable for a purpose, say so rather than forcing a recommendation.
+Cross-family rules
+Conclude with four lists.
+Always preserve
+List the rules that should remain consistent across all analyzed Pragma and 1Checkout visuals.
+Usually preserve
+List strong conventions that may occasionally change when the content requires it.
+May vary
+List elements that can adapt according to the article, visual purpose, channel, or aspect ratio.
+Never do
+Include at least:
+Never mix PRODUCT_PRAGMA and PRODUCT_1CHECKOUT styles accidentally.
+Never invent or redraw product logos.
+Never invent facts, data, interfaces, or product capabilities.
+Never use generic filler imagery merely to occupy space.
+Never place essential paragraphs or citations inside an AI-generated image.
+Never rely on tiny text or subtle color differences for essential meaning.
+Never assume unavailable references from a previous conversation can still be accessed.
+Future image-generation handoff
+Do not generate a final image-generation prompt during this style-study stage.
+At the end of the analysis, include the following handoff checklist for future image creation:
+Supply the article’s completed image brief.
+Select either PRODUCT_PRAGMA or PRODUCT_1CHECKOUT.
+Select the approved visual family.
+Attach the relevant reference images for that product and family to the image-generation request.
+Confirm that all attached references belong to the selected product.
+Supply any required factual information, verified data, or labels.
+Supply official logo assets separately if the logo will be added after generation.
+Combine the article image brief with only the selected family’s stable style prompt and variable composition template.
+Do not import styles, colors, motifs, or branding from the other product.
+Generate the final production prompt only after these inputs have been confirmed.
+End with this reminder:
+“Before generating a blog image, provide the article’s image brief, select either PRODUCT_PRAGMA or PRODUCT_1CHECKOUT, select the approved visual family, and attach the relevant product reference images. The final image-generation prompt must combine the image brief with only the selected product’s approved visual system.”
+
