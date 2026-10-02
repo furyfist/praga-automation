@@ -18,6 +18,8 @@ An ecommerce return policy is strongest when its published promise, return-proce
 
 ## Why One Return Window Creates Unequal Outcomes
 
+For a reference on defining return and cancellation eligibility, see [Shopify’s return-rules guide](https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/return-rules).
+
 A return window sets the final date on which a customer can begin an eligible return. It affects more than the return rate: it changes when inventory may return to saleable stock, whether the product is still in demand, how much reverse processing costs, and whether the customer considers the policy fair.
 
 The same number of days can be too long for a product whose resale value falls quickly and too short for a product where the customer needs reasonable time to inspect fit, compatibility, or quality. A tiered return-window policy makes that difference explicit rather than allowing one generic rule to hide it.
@@ -43,6 +45,8 @@ Every customer should be able to see the applicable window before purchase and a
 The aim is not to make high-value shoppers wait longer because they spent more. It is to match the operational rule to documented recovery, handling, and customer-service needs.
 
 ## Map Category and AOV Return Economics First
+
+For general returns-policy context, see [Shopify’s guidance on managing returns](https://help.shopify.com/en/manual/fulfillment/managing-orders/returns).
 
 Do not start by choosing arbitrary day counts. Begin with completed return data and work backwards from the final disposition. The useful unit is a comparable category or SKU cohort, not the entire catalogue average.
 
@@ -78,6 +82,8 @@ This boundary also improves analysis. It lets the team distinguish a window that
 
 ## Build Tiered Return Windows by Category and AOV
 
+For consumer-facing return and refund disclosure context in India, see the [Department of Consumer Affairs consumer-protection material](https://consumeraffairs.gov.in/pages/consumer-protection-acts).
+
 The policy should use a small number of understandable tiers. More segmentation is not automatically better; an unexplainable rule creates support work and inconsistent overrides. Start with the few characteristics that actually change recovery and customer need.
 
 ### Define a Return-Window Tier for Each Recovery Pattern
@@ -103,6 +109,8 @@ Show the relevant return-window information on the product page, at checkout whe
 Support teams need the same information, plus the exception route. A customer should not hear a different rule from the portal, the order email, and an agent. Consistent disclosure protects both the experience and the merchant’s ability to apply the policy fairly.
 
 ## Calculate Whether a Shorter Window Protects Value
+
+For a platform perspective on return rules and fee handling, see [Shopify’s return-rules documentation](https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/return-rules).
 
 A shorter window only improves margin when the recovery gained is larger than the customer, operational, and revenue cost it creates. Analyse the decision using realised outcomes, not a presumed improvement in return rate.
 
@@ -132,6 +140,8 @@ Review cohorts that cross a tier boundary as well. If a high-AOV exception rule 
 
 ## Keep Tiered Windows Fair When Exceptions Occur
 
+For external consumer-protection reference material, see the [Department of Consumer Affairs](https://consumeraffairs.gov.in/pages/consumer-protection-acts).
+
 No category policy can predict every valid case. A damaged delivery, incorrect item, missing component, or carrier-caused issue may need a path outside the normal customer-request window. The policy should recognise these cases without making every exception a manual negotiation.
 
 ### Define Eligibility and Evidence Separately
@@ -151,6 +161,8 @@ Monitor overrides by SKU, category, fulfilment node, courier, and reason. A recu
 *Alt text: Balanced view of return-window policy economics, customer fairness, and operational recovery value.*
 
 ## Test Category-Based Return Windows Before Rollout
+
+For testing-methodology background, see [Optimizely’s A/B testing overview](https://www.optimizely.com/optimization-glossary/ab-testing/).
 
 A new tier should be treated as an operating-policy change, not a one-time copy edit. Test a meaningful cohort, retain a stable comparison where possible, and follow the returns through final disposition.
 
@@ -172,7 +184,9 @@ Pair them with customer guardrails: policy-related contacts, complaints, CSAT or
 
 ## How Pragma RMS Supports Tiered Return Windows
 
-[Pragma RMS](https://bepragma.ai/product/rms) supports granular return-window and eligibility configuration by SKU, product category, and seasonal sale. The supplied product-page content also describes nested reason codes and media uploads for QC, with two-way OMS updates for pass/fail outcomes. Together, these controls provide the policy layer required to distinguish a category whose recovery profile differs from the catalogue average.
+For an external reference on return-rule setup, see [Shopify’s guide to return and cancellation rules](https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/return-rules).
+
+[Pragma RMS](https://bepragma.ai/product/rms) supports granular return-window and eligibility configuration by SKU, product category, and seasonal sale. Pragma’s product page also describes nested reason codes and media uploads for QC, with two-way OMS updates for pass/fail outcomes. Together, these controls provide the policy layer required to distinguish a category whose recovery profile differs from the catalogue average.
 
 ### Configure Eligibility With Product Context
 
@@ -182,11 +196,13 @@ The useful setup is a documented tier, visible customer communication, defined e
 
 ### Route Recoverable Stock Intelligently
 
-The product-page content describes automated reverse-pickup management, reverse AWB generation, retries, cancellation or regeneration handling, and clubbing multiple returned items into one AWB. It also describes dynamic courier allocation by PIN code and mapping returns to a nearest, source, or custom warehouse. These returns-management capabilities can align the reverse route with the product’s expected disposition after a timely request and help reduce return-processing time.
+Pragma’s product page describes automated reverse-pickup management, reverse AWB generation, retries, cancellation or regeneration handling, and clubbing multiple returned items into one AWB. It also describes dynamic courier allocation by PIN code and mapping returns to a nearest, source, or custom warehouse. These returns-management capabilities can align the reverse route with the product’s expected disposition after a timely request and help reduce return-processing time.
 
 Pragma’s [returns-management process guide](https://bepragma.ai/blogs/returns-management-process) provides additional context on eligibility, reverse logistics, and return handling around the policy decision.
 
 ## To Wrap It Up: Use the Window That Matches the Product
+
+For a broader overview of the returns workflow, see [Shopify’s returns-management guidance](https://help.shopify.com/en/manual/fulfillment/managing-orders/returns).
 
 Start with a small number of clear category tiers, then use AOV only where it changes the exposure enough to justify an exception review. A shorter window should protect a measurable recovery value, not become a hidden penalty. A longer window should support a real customer need, not conceal an uneconomic reverse process.
 
@@ -201,6 +217,8 @@ The customer’s request date, the merchant’s processing time, and the refund 
 ---
 
 ## FAQs (Frequently Asked Questions On Tiered Return Windows: Build Category and AOV Rules That Protect Recovery Value)
+
+For return-policy configuration context, see [Shopify’s return-rules documentation](https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/return-rules).
 
 ### 1\. What are tiered return windows?
 
@@ -234,21 +252,25 @@ Review them after material changes in product mix, price, discounting, seasonali
 
 ## **TL;DR**
 
+For external guidance on a customer-facing return policy, see [Shopify’s returns guide](https://help.shopify.com/en/manual/fulfillment/managing-orders/returns).
+
 Tiered return windows should follow recovery curves, not a universal deadline. Category defines how a product is likely to be recovered; AOV can flag meaningful exposure but should not become the only policy rule. Test windows against realised recovery and customer guardrails before rollout.
+
+**Documented RMS facts:** Pragma RMS lists granular return windows and eligibility by SKU, category, and seasonal sale; nested reason codes and media uploads for QC; and two-way OMS updates for pass/fail outcomes. Its routing capabilities include PIN-code-based courier allocation and mapping a return to the nearest, source, or custom warehouse.
 
 ### **Key Takeaways**
 
 • **Segment by recovery, not just category labels:** Seasonality, condition, reverse cost, and resale probability matter.  
 • **Use AOV as a modifier:** It can justify a review band, but does not automatically justify a shorter customer window.  
 • **Keep customer time separate from merchant processing:** A timely request should not fail because internal operations are slow.  
-• **Make exceptions explicit:** Defect and fulfilment-error routes need a clear, fair path.  
+• **Make exceptions explicit:** Defect and fulfilment-error routes need a clear, fair path, supported by nested reason codes and media evidence where required.  
 • **Prove the trade-off:** Measure recovery, cost, contacts, complaints, and repeat purchase before scaling.
 
 ### **How Pragma RMS Supports Tiered Return Windows**
 
-[Pragma RMS](https://bepragma.ai/product/rms) supports configurable return windows and eligibility by SKU, category, and seasonal sale. It also supports reason-based verification so a merchant can collect evidence where the product or claim requires it.
+[Pragma RMS](https://bepragma.ai/product/rms) supports configurable return windows and eligibility by SKU, category, and seasonal sale. Its product content also lists nested reason codes, reason-based media uploads for QC, and two-way OMS updates for pass/fail outcomes.
 
-Its rule-based reverse shipment generation can map SKU selections to warehouse, shipping-partner, and timing configurations. Use that operational context to align a timely return request with the product’s most appropriate recovery path.
+Its reverse-pickup workflow includes reverse AWB generation, retries, cancellations or regenerations, and multi-item clubbing. It can use PIN-code-based courier allocation and map returns to a nearest, source, or custom warehouse. Use that operational context to align a timely return request with the product’s most appropriate recovery path.
 
 **Configurable SKU, category, and seasonal-sale return windows**
 
@@ -257,6 +279,8 @@ Its rule-based reverse shipment generation can map SKU selections to warehouse, 
 ---
 
 ## **FAQ JSON-LD Schema**
+
+For structured-data implementation guidance, see [Google’s FAQPage documentation](https://developers.google.com/search/docs/appearance/structured-data/faqpage).
 
 ```json
 {
