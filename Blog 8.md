@@ -1,12 +1,18 @@
 # ![][image1]Tiered Return Windows: Build Category and AOV Rules That Protect Recovery Value
 
+*Alt text: Illustration of product categories moving through different return-window and recovery-value paths.*
+
 A universal return window looks simple to publish and easy to administer. Yet a seasonal garment, a sealed premium device, and a low-value accessory do not lose value at the same pace or create the same reverse-logistics cost. Applying one deadline to all three can either sacrifice recoverable margin or add friction where a longer window would be harmless.
 
 The better question is not whether a return window should be strict or generous. It is whether the window gives each product a fair customer journey while preserving the value that can realistically be recovered after pickup, receipt, quality control, and resale.
 
+An ecommerce return policy is strongest when its published promise, return-processing rules, and reverse-logistics route agree. Tiered windows are one part of a wider returns management process: the policy establishes when a customer can act, while routing, QC, exchanges, and refunds determine what happens next.
+
 *“Tiered Return Windows: Build Category and AOV Rules That Protect Recovery Value” explains how to group products, use AOV without making it the only rule, calculate the trade-off, and test a category-based returns policy before scaling it.*
 
 ![][image2]
+
+*Alt text: Return-window lifecycle showing a purchase, time-sensitive eligibility, reverse movement, and product recovery.*
 
 ---
 
@@ -68,6 +74,8 @@ This boundary also improves analysis. It lets the team distinguish a window that
 
 ![][image3]
 
+*Alt text: Product recovery map that compares category, condition, timing, and resale-value considerations for a return.*
+
 ## Build Tiered Return Windows by Category and AOV
 
 The policy should use a small number of understandable tiers. More segmentation is not automatically better; an unexplainable rule creates support work and inconsistent overrides. Start with the few characteristics that actually change recovery and customer need.
@@ -120,6 +128,8 @@ Review cohorts that cross a tier boundary as well. If a high-AOV exception rule 
 
 ![][image4]
 
+*Alt text: Illustration of a tiered returns-policy flow from product rules and customer request to exception handling.*
+
 ## Keep Tiered Windows Fair When Exceptions Occur
 
 No category policy can predict every valid case. A damaged delivery, incorrect item, missing component, or carrier-caused issue may need a path outside the normal customer-request window. The policy should recognise these cases without making every exception a manual negotiation.
@@ -137,6 +147,8 @@ Every exception needs a reason code, evidence record, owner, and review date. An
 Monitor overrides by SKU, category, fulfilment node, courier, and reason. A recurring exception is operational evidence: it may reveal a product defect, misleading description, inventory issue, or tier rule that needs revision.
 
 ![][image5]
+
+*Alt text: Balanced view of return-window policy economics, customer fairness, and operational recovery value.*
 
 ## Test Category-Based Return Windows Before Rollout
 
@@ -156,19 +168,21 @@ Pair them with customer guardrails: policy-related contacts, complaints, CSAT or
 
 ![][image6]
 
+*Alt text: Pilot scorecard for testing category-based return windows against financial and customer-experience guardrails.*
+
 ## How Pragma RMS Supports Tiered Return Windows
 
-[Pragma RMS](https://bepragma.ai/product/rms) supports return-window and eligibility configuration by SKU, product category, and seasonal sale. Those controls provide the policy layer required to distinguish a category whose recovery profile differs from the catalogue average.
+[Pragma RMS](https://bepragma.ai/product/rms) supports granular return-window and eligibility configuration by SKU, product category, and seasonal sale. The supplied product-page content also describes nested reason codes and media uploads for QC, with two-way OMS updates for pass/fail outcomes. Together, these controls provide the policy layer required to distinguish a category whose recovery profile differs from the catalogue average.
 
 ### Configure Eligibility With Product Context
 
-Pragma RMS can enable or disable return eligibility by SKU and supports reason-based media upload and verification. A merchant can use these capabilities to collect relevant evidence for a defect or condition-sensitive return without treating media requirements as a substitute for a clear return-window policy.
+Pragma RMS can enable or disable return eligibility by SKU and supports reason-based media upload and verification. It also supports tag, value, coupon, or PIN-code-level restrictions as part of its policy engine. A merchant can use these capabilities to collect relevant evidence for a defect or condition-sensitive return without treating media requirements or an automated restriction as a substitute for a clear ecommerce return policy.
 
 The useful setup is a documented tier, visible customer communication, defined exception route, and periodic review. Product configuration should make the rule repeatable, not hide the commercial choices inside a workflow.
 
 ### Route Recoverable Stock Intelligently
 
-Pragma RMS supports rule-based reverse shipment generation and can map SKU selections to dedicated warehouses, shipping partners, and timings, subject to available integrations and merchant configuration. That makes it possible to align the return path with the product’s expected disposition after a timely request.
+The product-page content describes automated reverse-pickup management, reverse AWB generation, retries, cancellation or regeneration handling, and clubbing multiple returned items into one AWB. It also describes dynamic courier allocation by PIN code and mapping returns to a nearest, source, or custom warehouse. These returns-management capabilities can align the reverse route with the product’s expected disposition after a timely request and help reduce return-processing time.
 
 Pragma’s [returns-management process guide](https://bepragma.ai/blogs/returns-management-process) provides additional context on eligibility, reverse logistics, and return handling around the policy decision.
 
@@ -181,6 +195,8 @@ The customer’s request date, the merchant’s processing time, and the refund 
 **Methodology note:** The framework and formula in this article are illustrative. Each merchant should establish its own product recovery, operating cost, customer-experience, and legal-policy baseline before changing a return window.
 
 [![][image7]](https://www.bepragma.ai/#wf-form-bepragma_form)
+
+*Alt text: Pragma RMS workflow connecting product categories, return rules, customer requests, review, reverse processing, and recovery.*
 
 ---
 

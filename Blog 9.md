@@ -1,5 +1,7 @@
 # ![][image1]RTO Risk Scoring at Order Confirmation Stage: Build Decisions Before Dispatch
 
+*Alt text: Order-confirmation risk workflow that routes an ecommerce order through a score, proportionate action, dispatch, delivery, or RTO outcome.*
+
 An order can look complete at checkout and still contain a delivery problem that is cheap to resolve before dispatch and expensive to discover after an RTO. The key is to distinguish an address needing clarification from evidence that calls for a stronger intervention.
 
 That is the purpose of **RTO risk scoring** at the order-confirmation stage. A useful score brings observable checkout signals into one consistent decision, then chooses the least-friction action that is likely to improve the delivery outcome. It should help a good COD order reach the customer—not quietly become a blanket reason to remove COD.
@@ -8,6 +10,8 @@ That is the purpose of **RTO risk scoring** at the order-confirmation stage. A u
 
 ![][image2]
 
+*Alt text: Order-confirmation lifecycle from COD checkout and signal collection to risk scoring, verification, dispatch, delivery, and return outcome.*
+
 ---
 
 ## What RTO Risk Scoring Should Decide at Order Confirmation
@@ -15,6 +19,8 @@ That is the purpose of **RTO risk scoring** at the order-confirmation stage. A u
 Return to origin (RTO) is a shipment that cannot be completed and returns through the carrier network. It is not the same event as a customer cancelling before dispatch. An RTO can create forward and reverse freight, handling, inventory delay, and a lost delivery opportunity. At confirmation, the merchant can still allow, repair, confirm, offer a payment alternative, or review an exceptional order.
 
 The decision is more useful than a single prediction. The question is not “Will this customer cause an RTO?” It is “What evidence is available now, what uncertainty remains, and what action is justified before packing?” That keeps the workflow operational and explainable.
+
+For an Indian D2C workflow, order risk scoring should be paired with ecommerce address validation and a clear COD control. The score is useful only if it resolves an address, intent, payment, or dispatch question in time to prevent an avoidable delivery failure.
 
 ### A Score Is a Decision Aid, Not a Customer Verdict
 
@@ -58,6 +64,8 @@ For every input, document its source, freshness, operational meaning, and possib
 
 ![][image3]
 
+*Alt text: Explainable RTO score inputs including address location, PIN-code serviceability, delivery history, order basket, and COD payment context.*
+
 ## Map Risk Bands to Proportionate Actions
 
 The score itself does not prevent an RTO. The action does. Define a small number of bands, then attach each one to an action that is no more restrictive than the evidence requires. A simple operating ladder is easier to test and less likely to create inconsistent agent behaviour than dozens of unreviewed thresholds.
@@ -86,6 +94,8 @@ Give reviewers checkout data, signals, reason codes, permitted contact history, 
 
 ![][image4]
 
+*Alt text: Escalating action ladder that moves from normal checkout to address validation, verification, and manual review according to evidence.*
+
 ## Measure the Cost of a Score, Not Only Its Accuracy
 
 A score can lower reported RTO by blocking orders that would have delivered. That is not automatically a commercial win. Assess it against delivered-order conversion and contribution after intervention cost.
@@ -111,6 +121,8 @@ Track RTO rate, but never alone. Pair it with eligible checkout conversion, COD 
 Segment the dashboard by action band, channel, category, PIN-code cohort, and new versus repeat customers where it is operationally useful. A global average can hide a band that reduces RTO while causing unacceptable friction for a particular customer journey.
 
 ![][image5]
+
+*Alt text: False-positive economics illustration balancing a successful customer delivery against the cost of an avoidable return to origin.*
 
 ## Validate the Score Before You Automate It
 
@@ -158,19 +170,21 @@ This review can reveal a missing address field, a coverage issue, a product patt
 
 ![][image6]
 
+*Alt text: Controlled RTO risk-scoring pilot with comparable order cohorts, outcome dashboard, feedback loop, and threshold calibration.*
+
 ## How Pragma RTO Suite Supports Confirmation-Stage Risk Scoring
 
-[Pragma RTO Suite](https://www.bepragma.ai/product/rto) is designed to help merchants act on delivery risk before the parcel enters the network. Pragma states that it scans more than 300 parameters and produces a risk assessment within 200 milliseconds of order placement. Use that fast signal to select a next step, not a generic denial.
+[Pragma RTO Suite](https://www.bepragma.ai/product/rto) is designed to help merchants act on delivery risk before the parcel enters the network. The supplied product-page content describes real-time checks using device and behavioural fingerprinting, address and PIN-code correction, and instant phone verification through OTP-less or Truecaller flows. It also states that the suite uses live and historic data to refine risk thresholds. Use that fast order risk scoring to select a next step, not a generic denial.
 
 ### Connect Scoring to Verification and Recovery Workflows
 
-The product describes behavioural analysis, customer-information screening, address, PIN-code, and phone checks, with order-verification and COD-to-prepaid workflows. These can support a merchant-defined ladder when rules, messaging, and escalation paths are deliberate.
+The product material describes behavioural analysis, customer-information screening, address, PIN-code, and phone checks, plus context-aware COD limits by order value, region, or user history. It also describes smart suppression for COD, discounts, or promotions and COD-to-prepaid nudges. These can support a merchant-defined ladder when the rules, messages, expiry, and escalation paths are deliberate; a restrictive action still needs explainability and a review route.
 
 For a related example of making delivery-risk evidence visible, see Pragma’s guide to a [PIN-code risk index](https://bepragma.ai/blogs/pincode-risk-index-building-a-composite-score-for-delivery-failure-probability). A PIN-code signal can be useful, but it should remain one input among address quality, order context, and current delivery operations.
 
 ### Treat Post-Dispatch NDR as a Separate Recovery Layer
 
-Confirmation-stage scoring aims to prevent avoidable uncertainty from entering fulfilment. NDR handling addresses shipments that are already in motion. Both can matter, but they answer different questions and should have different metrics.
+Confirmation-stage scoring aims to prevent avoidable uncertainty from entering fulfilment. NDR management addresses shipments that are already in motion. The supplied product-page content describes WhatsApp order confirmation or re-slotting and SKU-, location-, sale-, or customer-specific reattempts, with real-time updates to courier, OMS, and RMS systems. The two stages answer different questions and should have different metrics.
 
 Keep the audit trail connected. If many NDRs originated from a confirmation band or reason code, test whether earlier correction or verification could help. If a low-score cohort produces NDRs, investigate carrier execution, address capture, or product promise instead of simply raising the threshold.
 
@@ -183,6 +197,8 @@ Success is not lower RTO in isolation; it is a better mix of delivered orders, c
 **Methodology note:** The score inputs, formulas, and testing framework in this article are illustrative. Merchants should establish their own data-governance, consent, policy, operational, and customer-experience requirements before changing COD or confirmation workflows.
 
 [![][image7]](https://www.bepragma.ai/#wf-form-bepragma_form)
+
+*Alt text: Pragma order journey from checkout through risk scoring and confirmation to dispatch and successful customer delivery.*
 
 ---
 
