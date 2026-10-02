@@ -210,7 +210,7 @@ A risk score can prioritise attention, but it should not replace evidence, opera
 
 Pragma also describes automated NDR workflows that collect reattempt details and make them available to store, WMS, and courier systems. Its product page specifies WhatsApp confirmation or re-slotting and SKU-, location-, sale-, or customer-specific reattempts. Connecting these outcomes to pre-dispatch reason codes helps show whether an earlier action could resolve a recurring issue.
 
-For further detail on delivery-risk inputs, see Pragma’s guide to a [PIN-code risk index](https://bepragma.ai/blogs/pincode-risk-index-building-a-composite-score-for-delivery-failure-probability). Its principle applies here: a score is useful when the resulting action is clear and explainable.
+Its principle applies here: a score is useful when the resulting action is clear and explainable.
 
 ## To Wrap It Up: Preserve Good COD Demand
 
@@ -358,6 +358,16 @@ For structured-data implementation guidance, see [Google’s FAQPage documentati
   ]
 }
 ```
+
+---
+
+## Sources & Further Reading
+
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — decision-risk and documented-control context.
+- [Twilio Verify documentation](https://www.twilio.com/docs/verify) — phone-verification workflow context.
+- [Qualtrics: Net Promoter Score guide](https://www.qualtrics.com/experience-management/customer/net-promoter-score/) — customer-experience measurement context.
+- [Optimizely: A/B testing overview](https://www.optimizely.com/optimization-glossary/ab-testing/) — payment-mix test design.
+- [Google: FAQPage documentation](https://developers.google.com/search/docs/appearance/structured-data/faqpage) — FAQ JSON-LD implementation guidance.
 
 [image1]: <Blog 10-images/image1.png>
 

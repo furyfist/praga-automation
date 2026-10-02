@@ -194,7 +194,7 @@ For external documentation on verification flows, see [Twilio Verify](https://ww
 
 The product material describes behavioural analysis, customer-information screening, address, PIN-code, and phone checks, plus context-aware COD limits by order value, region, or user history. It also describes smart suppression for COD, discounts, or promotions and COD-to-prepaid nudges. These can support a merchant-defined ladder when the rules, messages, expiry, and escalation paths are deliberate; a restrictive action still needs explainability and a review route.
 
-For a related example of making delivery-risk evidence visible, see Pragma’s guide to a [PIN-code risk index](https://bepragma.ai/blogs/pincode-risk-index-building-a-composite-score-for-delivery-failure-probability). A PIN-code signal can be useful, but it should remain one input among address quality, order context, and current delivery operations.
+A PIN-code signal can be useful, but it should remain one input among address quality, order context, and current delivery operations.
 
 ### Treat Post-Dispatch NDR as a Separate Recovery Layer
 
@@ -348,6 +348,16 @@ For structured-data implementation guidance, see [Google’s FAQPage documentati
   ]
 }
 ```
+
+---
+
+## Sources & Further Reading
+
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — risk-governance and explainability context.
+- [Twilio Verify documentation](https://www.twilio.com/docs/verify) — phone-verification workflow context.
+- [Qualtrics: Net Promoter Score guide](https://www.qualtrics.com/experience-management/customer/net-promoter-score/) — customer-experience measurement context.
+- [Optimizely: A/B testing overview](https://www.optimizely.com/optimization-glossary/ab-testing/) — controlled-intervention testing context.
+- [Google: FAQPage documentation](https://developers.google.com/search/docs/appearance/structured-data/faqpage) — FAQ JSON-LD implementation guidance.
 
 [image1]: <Blog 9-images/image1.png>
 

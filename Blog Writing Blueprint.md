@@ -6,7 +6,11 @@ This is the house format for the ten planned topics in `10 Topics& Keywords.md`.
 
 The samples are long-form operational explainers. They make one commercial decision legible, define the evidence needed to make it, show a framework or worked example, explain how to test it, then position the relevant Pragma product as an enabler rather than the proof of the argument.
 
-Treat the rules marked **required** as the default production standard. The samples have small inconsistencies (for example, Blog 5 has five graphics, while most have seven), so do not copy accidental omissions such as an unlabelled schema block or an empty `##` heading from a single file.
+Treat the rules marked **required** as the archival sample baseline. The samples have small inconsistencies (for example, Blog 5 has five graphics, while most have seven), so do not copy accidental omissions such as an unlabelled schema block or an empty `##` heading from a single file.
+
+### Current production overrides
+
+`final_context.md` is the current production authority and overrides this historical sample study where they differ. In particular, use the newer 5–7 main-body H2 / 10–15 main-body H3 target; captions below every image; H2-level linking and source-list rules; product-page evidence; and the separate product visual systems. Use `Pragma Visual Reference Guide.md` for image-family selection, logo handling, and image briefs.
 
 ## The measurable sample pattern
 
@@ -18,7 +22,7 @@ Treat the rules marked **required** as the default production standard. The samp
 | Blog 4 | 3,006 | 1 / 8 / 23 / 9 / 3 / 0 | 7 |
 | Blog 5 | 2,586 | 1 / 8 / 19 / 2 / 0 / 0 | 5 |
 | Blog 6 | 2,687 | 1 / 11 / 20 / 12 / 3 / 0 | 7 |
-| **Working target** | **2,700–3,100** | **1 / 9–10 / 20–24 / 5–10 / 0–3 / 0** | **7** |
+| **Current production target** | **2,700–3,100** | **1 / 5–7 main-body H2 / 10–15 main-body H3 / purposeful H4–H5 only / 0 H6** | **7** |
 
 The hierarchy is intentionally dense but never arbitrary. Across the six samples:
 
@@ -70,11 +74,15 @@ Use this sequence for every new article unless the topic makes a named section i
 ````md
 # ![][image1]Primary-keyword title: concrete commercial outcome
 
+*Alt text: [Specific description of the hero visual and its decision context.]*
+
 [2–3 short opening paragraphs]
 
 *“Full title” explains [the decision, framework, or measurement outcome].*
 
 ![][image2]
+
+*Alt text: [Specific description of the opening journey or comparison.]*
 
 ---
 
@@ -94,6 +102,8 @@ Use this sequence for every new article unless the topic makes a named section i
 
 ![][image3]
 
+*Alt text: [Specific description of the diagnostic visual.]*
+
 ## Build the operating framework
 
 ### Present the decision ladder, policy, or model
@@ -102,9 +112,13 @@ Use this sequence for every new article unless the topic makes a named section i
 
 ![][image4]
 
+*Alt text: [Specific description of the central framework or calculation.]*
+
 ### Add a worked example, comparison, or guardrail
 
 ![][image5]
+
+*Alt text: [Specific description of the recovery or measurement visual.]*
 
 ## Test and operationalise the change
 
@@ -113,6 +127,8 @@ Use this sequence for every new article unless the topic makes a named section i
 ### Explain ownership, monitoring, and exceptions
 
 ![][image6]
+
+*Alt text: [Specific description of the test or rollout visual.]*
 
 ## How Pragma [product] supports [the outcome]
 
@@ -127,6 +143,8 @@ Use this sequence for every new article unless the topic makes a named section i
 **Methodology note:** [only if illustrative numbers, external evidence limits, or an anonymous case need disclosure.]
 
 [![][image7]](https://www.bepragma.ai/#wf-form-bepragma_form)
+
+*Alt text: [Specific description of the closing Pragma journey visual.]*
 
 ---
 
@@ -168,6 +186,13 @@ Use this sequence for every new article unless the topic makes a named section i
 { ...the same six or seven visible FAQs, in the same order... }
 ```
 
+---
+
+## Sources & Further Reading
+
+- [Official source](https://example.com/) — used for [specific claim or framework].
+- [Competitor source, if used](https://example.com/) — context research only, never proof of a Pragma capability.
+
 [image1]: <Blog N-images/image1.png>
 ...
 [image7]: <Blog N-images/image7.png>
@@ -177,9 +202,9 @@ Use this sequence for every new article unless the topic makes a named section i
 
 1. The visible FAQ questions and the JSON-LD `name` values must match exactly. The visible answer and JSON-LD `text` must also match in substance.
 2. Use six or seven FAQs, not filler questions. Each should answer a high-intent operational query that has not already been answered in exactly the same wording.
-3. Keep the TL;DR after visible FAQs and before schema. It contains one recap paragraph and exactly five takeaway bullets in the samples.
+3. Keep the TL;DR after visible FAQs and before schema. It contains one recap paragraph, relevant source-supported product facts, and exactly five takeaway bullets.
 4. The second product block is a concise CTA, not a second sales page. Use two paragraphs, one verified numeric or qualitative proof line, then one linked action.
-5. End with image reference definitions. Use local paths such as `<Blog N-images/image4.png>`; never embed base64 in the Markdown.
+5. Follow the schema with one concise `Sources & Further Reading` list that records all external research—including competitor research where used—then end with image reference definitions. Use local paths such as `<Blog N-images/image4.png>`; never embed base64 in the Markdown.
 
 ## Writing and information-design rules
 
@@ -199,7 +224,7 @@ Use this sequence for every new article unless the topic makes a named section i
 - Use bullets for inputs, signals, exclusions, states, or KPIs. Use numbered lists only for chronological paths, prescribed sequences, or audit steps.
 - Use bold only for consequential labels, metric names, thresholds, and carefully verified claims. Do not bold whole paragraphs.
 - Use italics for the opening scope statement, an occasional methodology caveat, or a product name in a sentence. Do not italicise body prose for emphasis.
-- Link Pragma’s relevant internal resource naturally inside a sentence when it adds a next step. Do not make a link dump. Use official or primary sources for external standards.
+- Every H2 needs a contextual external research link, placed immediately below the heading, and a relevant internal Pragma article link where one genuinely helps the reader. Do not force an internal link. The `How Pragma…` section may use only the relevant product-page link (no internal blog link); record research links together in the end-of-article `Sources & Further Reading` section.
 - Write formulas in plain Markdown lines; escape `=` as `\=` only when matching the sample export style. Explain every input immediately after the formula.
 - Put dense comparison tables, matrices, scorecards, and flow diagrams in images rather than Markdown pipe tables. The samples’ data-heavy tables are visual assets, which keeps the article scannable and keeps the visual language consistent.
 
@@ -213,15 +238,15 @@ Use this sequence for every new article unless the topic makes a named section i
 
 ## Visual system and image-placement rules
 
-All 40 source graphics were reviewed visually. They are editorial diagrams, not decoration. Build a visual only when it clarifies a process, comparison, decision, state transition, or worked example that would be slow to parse in prose.
+All 40 source graphics and the newer light/dark reference sets were reviewed visually. They are editorial diagrams, not decoration. Build a visual only when it clarifies a process, comparison, decision, state transition, or worked example that would be slow to parse in prose.
 
-### Shared visual language
+### Product-specific visual language
 
-- White or very pale-blue canvas; navy headings and line work; bright blue arrows and primary accents; pale blue cards; yellow highlight behind the key phrase; coral/red only for loss, risk, failed state, or manual review.
-- Clean flat/vector illustrations, rounded cards, thin outline icons, and short high-contrast labels. No photorealistic stock imagery.
-- Most assets are 602 px wide. Use a wide hero or diagram (roughly 602×301–451); use a taller process flow or scorecard only when the content requires it.
-- Put the `PRAGMA.` wordmark subtly at the lower-right. Product-specific creative can use the relevant product lockup (for example `1Checkout by PRAGMA`).
-- Tables inside images use pale-blue headers, navy type, restrained grid lines, and only the information needed to make the decision.
+- **PRODUCT_PRAGMA:** Use the light operational-explainer family for RMS, RTO Suite, ShipAxis, WhatsApp Business Suite, and Omnichannel CRM. It uses a white/pale-blue canvas, navy line work, bright-blue actions, pale-blue cards, restrained yellow highlights, and coral/red only for risk/failure. Tables use pale-blue headers, navy type, and restrained grid lines.
+- **PRODUCT_1CHECKOUT:** Use the dark checkout-intelligence family for 1Checkout only. It uses a charcoal/black canvas, white type and line work, electric-blue emphasis, blue-grey panels, and sparse controlled glow. Do not borrow the light family’s yellow/coral palette or warehouse/returns motifs.
+- Both systems use clean vector diagrams, rounded cards or controlled UI modules, short labels, and a strong mobile-readable hierarchy; neither uses photorealistic stock imagery.
+- Add the official logo asset after generation in a lower-right safe area. Do not instruct an image model to draw a logo: use `logo.png` for Pragma or `1checkout-by-pragma.svg` for 1Checkout.
+- Most historical assets are about 602 px wide, but new hero images should be at least 1,200 px wide and retain their focal point in a 16:9 crop. Refer to `Pragma Visual Reference Guide.md` for the full family prompts and negative constraints.
 
 ### The seven image roles
 
@@ -240,6 +265,7 @@ Blog 5 proves that five images can work for a narrower economics article, but se
 ### Image-adjacent formatting
 
 - Put the image on its own line with a blank line above and below.
+- Put a specific italic `*Alt text: …*` caption immediately below every image, including the H1 hero and linked CTA visual.
 - A visual can appear immediately after a section heading only when the heading itself introduces it (as in the ShipAxis product H2). Otherwise give readers one short orienting paragraph first.
 - Never put a raw image URL in body text. Use `![][imageN]`, then put all reference definitions at the end.
 - Do not repeat the full diagram text in the paragraph below it. Introduce what the reader should compare, then interpret the implication after the visual.
@@ -381,12 +407,14 @@ The exact headings may be polished while drafting, but each article must preserv
 ## Pre-publication checklist
 
 - [ ] Article is 2,700–3,100 words before JSON-LD and image reference definitions.
-- [ ] There is one H1, 9–10 H2s, 20–24 H3s, 5–10 purposeful H4s, at most three H5s, and no H6.
+- [ ] There is one H1, 5–7 main-body H2s, 10–15 main-body H3s, only purposeful H4/H5s, and no H6; every parent heading has meaningful framing copy before children appear.
 - [ ] Opening uses the H1 → short context → italic scope statement → image 2 → `---` pattern.
 - [ ] Every major claim has an evidence boundary; all illustrative numbers are labelled.
 - [ ] The relevant Pragma product appears after the reader already understands the operational framework.
 - [ ] There are six or seven visible FAQs, and JSON-LD exactly mirrors them.
-- [ ] TL;DR has one recap paragraph and five takeaway bullets.
+- [ ] TL;DR has one recap paragraph, relevant documented product facts, and exactly five takeaway bullets.
 - [ ] Seven visuals have seven different explanatory jobs; local image links resolve.
-- [ ] Every image uses the established Pragma visual language and is placed beside the section it explains.
-- [ ] Product proof points, integrations, compliance claims, external standards, and outbound links are verified before publication.
+- [ ] Every image uses the selected PRODUCT_PRAGMA or PRODUCT_1CHECKOUT visual family, has the right official lower-right logo treatment, and is placed beside the section it explains with an `Alt text:` caption.
+- [ ] Every H2 has a contextual external resource and a natural internal link where relevant; the Pragma product section links only to the relevant product page.
+- [ ] FAQ JSON-LD is followed by a complete `Sources & Further Reading` list, including any competitor research source.
+- [ ] Product proof points, integrations, compliance claims, external standards, and outbound links are verified against the product-content PDF or approved live Pragma product page before publication.
